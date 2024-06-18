@@ -1,0 +1,34 @@
+**Prerequisite**
+Kafka Installed
+Zookepper and Broker Running
+
+
+**Project Overview**
+
+The MessageDrivenApp is a Java-based project that demonstrates a message-driven architecture using Apache Kafka as the messaging system. The project consists of a producer application that sends messages to a Kafka topic, and a consumer application that consumes messages from the same topic.
+
+**Project Structure**
+
+The project is structured into the following modules:
+
+producer: This module contains the producer application that sends messages to a Kafka topic.
+consumer: This module contains the consumer application that consumes messages from a Kafka topic.
+constants: This module contains constants used throughout the project, such as the Kafka topic name and bootstrap server URL.
+
+
+**Testing**
+
+The project includes JUnit tests for the producer and consumer applications. The tests use Mockito to mock out the Kafka producer and consumer instances, and then verify that the expected methods are called.
+// NOTE: for now consumer test case run for ever as there is while(true) in consumer class  for sake of keeping it sinple
+
+
+**The project depends on the following libraries:**
+
+Apache Kafka (kafka-clients)
+SLF4J (slf4j-api)
+Lombok (lombok)
+JUnit (junit-jupiter)
+Mockito (mockito-core)
+
+Resource:
+https://www.sohamkamani.com/install-and-run-kafka-locally/
